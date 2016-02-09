@@ -1,0 +1,27 @@
+{
+  "name": "nodeocrtraining",
+  "version": "1.0.0",
+  "description": "JS 'fork' of PythonOCRTraining - Quick experiment to see if fontkit for node might be better for computing character bounding boxes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlennox/NodeOCRTraining.git"
+  },
+  "author": "Mark Lennox <mark@webpusher.ie>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlennox/NodeOCRTraining/issues"
+  },
+  "homepage": "https://github.com/mlennox/NodeOCRTraining#readme",
+  "devDependencies": {
+    "fontkit": "^1.1.0"
+  },
+  "dependencies": {
+    "pretty-print": "^1.1.0",
+    "smart-circular": "^1.0.1"
+  }
+}
