@@ -8,7 +8,15 @@ var lg = fk.openSync('./fonts/luckiestguy/LuckiestGuy.ttf');
 
 var lay = lg.layout(example_text);
 
-var thing = pp(decirc(lay.glyphs[0]._font._tables.GPOS.pairSets));
+// https://www.microsoft.com/typography/otspec/gpos.htm
+
+// returns a restructure/Struct
+// not sure how to access the properties yet
+var thing = lay.glyphs[0]._font._tables.GPOS.lookupList; 
+
+console.log('thing', thing[].subTableCount);
+
+// pp(decirc(thing));
 
 // console.log('lay', lay.glyphs[0]._font._tables.cmap.tables[0].table);
 
