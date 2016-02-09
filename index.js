@@ -1,6 +1,7 @@
 var fk = require('fontkit');
 var pp = require('pretty-print');
 var decirc = require('smart-circular');
+var _ = require('lodash');
 
 var example_text = "'Tis the Fame and Fills the Soul"
 
@@ -14,7 +15,17 @@ var lay = lg.layout(example_text);
 // not sure how to access the properties yet
 var thing = lay.glyphs[0]._font._tables.GPOS.lookupList; 
 
-console.log('thing', thing[].subTableCount);
+console.log('pair adjustment (kerning)', _.filter(thing.items[0].subTables[0], 
+	function(item) {
+		console.log(item);
+		return item.lookupType === 2;
+	}
+));
+
+
+// for (var i in thing){
+// 	console.log(i, thing[i]);
+// }
 
 // pp(decirc(thing));
 
