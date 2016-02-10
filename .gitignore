@@ -1,4 +1,5 @@
 fonts/**
+data*.txt
 
 # Logs
 logs

@@ -1,0 +1,7 @@
+Single format subtable
+version: 1 (?)
+coverage: 
+	version: x
+	rangeCount: x
+	rangeRecords: []
+

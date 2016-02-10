@@ -15,10 +15,11 @@ var lay = lg.layout(example_text);
 // not sure how to access the properties yet
 var thing = lay.glyphs[0]._font._tables.GPOS.lookupList; 
 
+// console.log('pair adjustment (kerning)', _.filter(thing.items[0].subTables, 
 console.log('pair adjustment (kerning)', _.filter(thing.items[0].subTables[0], 
 	function(item) {
 		console.log(item);
-		return item.lookupType === 2;
+		return item.rangeRecords;
 	}
 ));
 
