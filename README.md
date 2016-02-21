@@ -17,10 +17,3 @@ Windows | [Instructions on our wiki](https://github.com/Automattic/node-canvas/w
 
 ### Node
 Of course you'll need node. You'll need a version that natively supports ES6/7 or you'll need to alter the npm scripts in [package.json](https://github.com/mlennox/NodeOCRTraining/blob/master/package.json) to use the --harmony flag.
-
-
-
-
-
-
-
